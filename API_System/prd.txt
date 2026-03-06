@@ -1,0 +1,38 @@
+Printing Order API System
+
+1. Project Overview
+
+The Printing Order API System is a backend application developed using FastAPI and Python to manage printing shop orders in a simple and automated way.
+
+Currently, printing orders are recorded manually, which makes the process slow and prone to errors. Staff members also manually compute the total cost of each order, which can lead to incorrect pricing and inconsistent records.
+
+This system will provide a backend API that can accept printing orders, automatically compute the total cost based on the type of printing, and allow users to view and retrieve order information. The system will not use a database; instead, orders will be temporarily stored in memory during system runtime.
+
+The API will serve as the core service that can later be connected to a frontend system such as a web or mobile application used by the printing shop staff.
+
+
+2. Problem Statement
+
+* Printing orders are manually recorded on paper or notes.
+* Staff compute printing costs manually, which can lead to calculation errors.
+* Orders may be lost due to poor record keeping.
+* Duplicate orders may occur because there is no centralized system.
+* Retrieving previous order information is difficult and time-consuming.
+
+
+3. Objective List
+
+* Develop a backend API using FastAPI and Python.
+* Allow the system to accept printing orders through an API endpoint.
+* Automatically compute the total cost of printing orders based on predefined prices. Printing Prices: Black & White: PHP 2.00/page, Colored: PHP 5.00/page, Photo Paper: PHP 20.00/page.
+* Enable viewing of all existing orders.
+* Allow retrieval of specific order information.
+* Reduce manual computation errors in printing cost calculation.
+* Provide a simple backend solution without using a database.
+
+
+4. Users
+
+* Owner - will use the system to view sales reports, monitor daily income, track order status, and evaluate overall business performance
+* Printing Shop Staff – responsible for submitting printing orders and checking order details.
+* Clients – benefit from faster and more accurate order processing.
